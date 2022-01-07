@@ -1,0 +1,38 @@
+.p-header-menu {
+  display: none;
+  height: 100%;
+
+  @include mq(tab) {
+     display: block;
+     display: flex;
+     align-items: center;
+    
+  }
+}
+
+.p-header-menu__items {
+  display: flex;
+  height: inherit;
+  align-items: center;
+
+}
+
+.p-header-menu__item {
+  height: inherit;
+  font-size: rem(16);
+  font-weight: 700;
+}
+
+
+.p-header-menu__item a {
+  padding: 0 rem(14);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+
+}
+

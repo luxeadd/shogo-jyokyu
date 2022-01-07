@@ -1,0 +1,88 @@
+.p-footer {
+ background-color: $text-color;
+ color: $white;
+ padding: rem(45) 0 rem(66);
+
+}
+
+.p-footer__body {
+  display: flex;
+  align-items: flex-start;
+
+}
+
+.p-footer__items {
+ display: flex;
+}
+
+.p-footer__item {
+
+}
+
+.p-footer__item:not(:first-child) {
+  border-left: 1px solid $white;
+}
+
+.p-footer__item a {
+  display: inline-block;
+  padding: rem(5) rem(21);
+  font-size: rem(16);
+  font-weight: 700;
+
+}
+
+.p-footer__info {
+  margin-left: auto;
+}
+
+.p-footer__logo{
+ width: rem(197);
+
+}
+
+.p-footer__logo img {
+  width: 100%;
+  height: 100%;
+
+}
+
+.p-footer__open {
+
+}
+
+.p-footer__time {
+  font-size: rem(12);
+  text-align: right;
+}
+
+.p-footer__tel{
+  font-size: rem(16);
+  font-weight: 700;
+  position: relative;
+  margin-left: auto;
+  display: inline-block;
+  margin-left: auto;
+}
+
+.p-footer__tel a {
+  display: inline-block;
+
+}
+
+
+
+.p-footer__tel a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: rem(-15);
+  width: rem(10);
+  height: rem(14);
+  background-image: url(../img/tel-white.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+
+}
