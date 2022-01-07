@@ -12,6 +12,14 @@
   <header class="l-header p-header js-header">
   <div class="p-header__inner">
 
+  <?php
+        $home = esc_url( home_url( "/" ));
+        $news = esc_url( home_url( "/news/" ));
+        $blog = esc_url( home_url( "/blog/" ));
+        $price = esc_url( home_url( "/price/" ));
+        $contact = esc_url( home_url( "/contact/" ));
+      ?>
+
    <!-- ヘッダーロゴ -->
    <?php if ( is_front_page() ): ?>
     <h1 class="p-header__logo">
@@ -33,13 +41,7 @@
        <span class="c-hamburger__line"></span>
      </button>
      
-     <?php
-        $home = esc_url( home_url( "/" ));
-        $news = esc_url( home_url( "/news/" ));
-        $blog = esc_url( home_url( "/blog/" ));
-        $price = esc_url( home_url( "/price/" ));
-        $contact = esc_url( home_url( "/contact/" ));
-      ?>
+     
 
 
     <!-- ドロワーメニュー -->
