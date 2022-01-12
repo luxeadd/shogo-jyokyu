@@ -1,5 +1,18 @@
 .c-section-title {
-  font-size: rem(36);
+  font-size: rem(26);
   font-weight: 700;
+  
+  @include mq(tab) {
+    font-size: rem(36);
+    
+  }
 }
 
+.c-section-title--small {
+ font-size: rem(22);
+  font-weight: 700;
+  @include mq(tab) {
+    font-size: rem(32);
+    
+  }
+}

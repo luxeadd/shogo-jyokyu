@@ -1,0 +1,8 @@
+.l-sub-mv {
+  margin-top: rem(50);
+
+  @include mq(tab) {
+    margin-top: rem(80);
+    
+  }
+}

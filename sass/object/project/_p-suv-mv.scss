@@ -1,0 +1,46 @@
+.p-sub-mv {
+  width: 100%;
+  height: rem(221);
+  position: relative;
+  
+  @include mq(tab) {
+    height: rem(221);
+    
+  }
+ }
+ 
+ .p-suv-mv__img {
+  width: inherit;
+  height: inherit;
+ 
+ }
+ 
+ .p-suv-mv__img img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+ }
+ 
+ 
+ .p-sub-mv__title {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+  font-size: rem(24);
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  z-index: 2;
+ 
+ @include mq(tab) {
+   font-size: rem(32);
+   
+ }
+ }
+
+ .p-sub-mv__breadcrumbs {
+   padding: rem(16) 0;
+   background-color: $gray;
+   font-size: rem(12);
+ }

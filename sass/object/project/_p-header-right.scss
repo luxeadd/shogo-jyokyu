@@ -1,7 +1,12 @@
 .p-header-right {
-  display: flex;
-  align-items: center;
-  height: 100%;
+  display: none;
+
+  @include mq(lg) {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    
+  }
  }
  
  .p-header-right__open {
@@ -10,6 +15,7 @@
    justify-content: flex-end;
    align-items: flex-end;
    height: inherit;
+   padding-bottom: rem(10);
  
  }
  
@@ -41,12 +47,19 @@
  
  .p-header-right__btn {
    font-size: rem(14);
+   font-weight: 700;
    background-color: $ac-color;
    width: rem(142);
    height: rem(50);
    margin-left: rem(23);
    border-radius: rem(5);
+   transition: .3s;
  }
+
+ .p-header-right__btn:hover {
+   opacity: $opacity;
+ }
+
  .p-header-right__btn a {
    width: 100%;
    height: 100%;
@@ -60,4 +73,5 @@
    margin-left: rem(10);
    background-color: $text-color;
    width: rem(137);
+   font-weight: 700;
  }

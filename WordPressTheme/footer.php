@@ -1,6 +1,6 @@
 <footer class="p-footer">
   <div class="p-footer__top">
-    <div class="l-inner">
+    <div class="p-footer__inner">
       <div class="p-footer__body">
         <div class="p-footer__items">
           <div class="p-footer__item"><a href="">ホーム</a></div><!-- /.p-footer__item -->

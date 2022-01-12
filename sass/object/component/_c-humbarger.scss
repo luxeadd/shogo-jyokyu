@@ -17,7 +17,7 @@ $hamburger-color2: #fff; //展開時ボランカラー
           transition: all .3s ease-in-out;
  
 
-@include mq(tab) {
+@include mq(lg) {
   display: none;
 }
 }

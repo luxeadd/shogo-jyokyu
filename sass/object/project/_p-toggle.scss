@@ -1,0 +1,104 @@
+.p-toggle *, .p-toggle *:after, .p-toggle *:before {
+	-webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.p-toggle {
+  overflow-x: hidden;
+	margin-left: auto;
+  margin-right: auto;
+	color: #333333;
+}
+.p-toggle__item {
+  padding: rem(25) 0 rem(9);
+	border-bottom: 1px dotted #cccccc;
+  position: relative;
+  border-bottom: 1px solid $text-color;
+ 
+}
+.p-toggle__item:first-child {
+  border-top: 1px solid $text-color;
+}
+
+.p-toggle__label {
+ font-size: rem(14);
+ position: relative;
+ display: block;
+ width: 100%;
+ margin: 0;
+ padding-bottom: rem(15);
+ padding-right: rem(50);
+ cursor: pointer;
+ 
+ @include mq(tab) {
+   font-size: rem(16);
+   
+ }
+}
+
+.p-toggle__label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: rem(15);
+  height: rem(2);
+  background-color: $text-color;
+  top: 27%;
+  transform: translateY(-50%);
+  right: rem(21);
+  transition: 0.3s ease;
+  
+  @include mq(tab) {
+    width: rem(25);
+    height: rem(3);
+    
+  }
+}
+.p-toggle__label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: rem(2);
+  height: rem(15);
+  background-color: $text-color;
+  top: 27%;
+  transform: translateY(-50%);
+  right: rem(28);
+  transition: 0.3s ease;
+  
+  @include mq(tab) {
+    width: rem(3);
+    height: rem(25);
+    right: rem(31);
+    
+  }
+}
+
+
+.p-toggle__item-content {
+	font-size: rem(12);
+	position: relative;
+	overflow: hidden;
+	height: 0;
+	padding: 0 rem(26);
+	-webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+	opacity: 0;
+  background-color: $gray;
+  
+  @include mq(tab) {
+    font-size: rem(16);
+    
+  }
+}
+.p-toggle__item input[type=checkbox]:checked ~ .p-toggle__item-content {
+	height: auto;
+	padding: rem(19) rem(25);
+	opacity: 1;
+}
+
+.p-toggle__item input[type=checkbox]:checked ~  .p-toggle__label::after {
+	transform: translateY(-50%) rotate(90deg);;
+}
+.p-toggle__item input[type=checkbox] {
+  display: none;
+}

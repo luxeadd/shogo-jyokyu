@@ -1,8 +1,8 @@
 
 .u-hidden-pc {
 	// PC時に非表示
-
-	@include mq("pc") {
+     
+	@include mq("tab") {
 		display: none;
 	}
 }
@@ -10,8 +10,23 @@
 
 .u-hidden-sp {
 	// スマホ時に非表示
-
-	@include mq("sp") {
+  
+	@include mq("tab") {
 		display: none;
+	}
+}
+
+.sp-only {
+	
+	@include mq(tab) {
+		display: none;
+	}
+}
+
+.pc-only {
+	display: none;
+
+	@include mq(tab) {
+		display: block;
 	}
 }

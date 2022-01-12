@@ -1,0 +1,115 @@
+.p-contact {
+ text-align: center;
+}
+
+.p-contact__body{
+ background-image: url(../img/request.jpg);
+ background-repeat: no-repeat;
+ background-position: top;
+background-size: cover; 
+padding: rem(40) 0 rem(30);
+color: $white;
+
+@include mq(tab) {
+  padding: rem(59) 0 rem(36);
+  
+}
+
+}
+
+.p-contact__text{
+ font-size: rem(24);
+ font-weight: 700;
+ 
+ @include mq(tab) {
+   font-size: rem(32);
+   
+ }
+
+}
+
+.p-contact__btn {
+ width: 100%;
+ max-width: rem(200);
+ height: rem(40);
+ 
+ margin-left: auto;
+ margin-right: auto;
+ background-color: $ac-color;
+ border-radius: 25px;
+ margin-top: rem(16);
+ transition: .3s;
+ 
+ @include mq(tab) {
+   max-width: rem(280);
+   height: rem(50);
+  
+}
+}
+
+.p-contact__btn:hover {
+  background-color: $text-color;
+}
+
+.p-contact__btn a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.p-contact__link{
+ margin-top: rem(15);
+ text-decoration: underline;
+ 
+ @include mq(tab) {
+   margin-top: rem(17);
+   
+ }
+}
+
+.p-contact__content {
+  padding: rem(10) 0 rem(15);
+  
+  @include mq(tab) {
+    padding: rem(20) 0 rem(23);
+    
+  }
+}
+
+.p-contact__content-inner {
+  
+  @include mq(tab) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: rem(-110);
+    
+  }
+
+}
+
+.p-contact__content-text {
+  font-size: rem(16);
+  font-weight: 700;
+  
+
+}
+
+.p-contact__content-tel{
+ font-size: rem(36);
+ font-weight: 700;
+ margin-left: rem(20);
+ line-height: 1;
+}
+
+.p-contact__content-open {
+ font-size: rem(16);
+ 
+ @include mq(tab) {
+   margin-left: rem(20);
+   
+ }
+ 
+}

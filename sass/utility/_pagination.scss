@@ -1,0 +1,47 @@
+
+.wp-pagenavi {
+	clear: both;
+	text-align:center;
+  position: relative;
+
+}
+.wp-pagenavi a, .wp-pagenavi span {
+	color: $text-color;
+	background-color: #fff;
+	border: 1px solid $text-color;
+	padding: rem(10) rem(15);
+	white-space: nowrap;
+	-webkit-transition: 0.2s ease-in-out;
+	-moz-transition: 0.2s ease-in-out;
+	-o-transition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out;
+	text-align: center;
+	text-decoration: none;
+  font-size: rem(14);
+  
+  @include mq(tab) {
+    padding: rem(16) rem(20);
+    font-size: rem(16);
+  }
+}
+.wp-pagenavi a:hover{
+	color: #FFF;
+	background-color: #A09D71;
+	border-color: #999;
+    }
+.wp-pagenavi span.current{
+	color: #FFF;
+	background-color: $text-color;
+	border-color: $text-color;
+	font-weight: bold;
+    }
+
+  .wp-pagenavi .smaller,
+  .wp-pagenavi .larger {
+    margin-top: rem(12);
+
+    @include mq(tab) {
+      margin-left: rem(18);
+      
+    }
+  }

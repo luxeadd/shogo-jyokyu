@@ -2,7 +2,7 @@
   display: none;
   height: 100%;
 
-  @include mq(tab) {
+  @include mq(lg) {
      display: block;
      display: flex;
      align-items: center;

@@ -1,36 +1,61 @@
 .p-mv {
-  background: url(../img/fv.jpg) no-repeat center  / cover;
+  background: url(../img/fv.jpg) no-repeat center 37%  / cover;
 }
 .p-mv__top{
-  padding: rem(116) 0 rem(86);
+  padding: rem(60) 0 rem(50);
   text-align: center;
   color: $white;
+  
+  @include mq(tab) {
+    padding: rem(102) 0 rem(81);
+    
+  }
 }
 
 .p-mv__title {
- font-size: rem(48);
+ font-size: rem(30);
  font-weight: 700;
+ 
+ @include mq(tab) {
+   font-size: rem(48);
+   
+ }
  
 }
 
 .p-mv__sub-title{
- font-size: rem(18);
+ font-size: rem(16);
  line-height: (31 / 18);
-margin-top: rem(25);
-
+ margin-top: rem(7);
+ 
+ @include mq(tab) {
+  font-size: rem(18);
+  
+}
 }
 
 .p-mv__btn{
- font-size: rem(16);
+ font-size: rem(14);
  font-weight: 700;
  width: 100%;
- max-width: rem(260);
- height: rem(60);
- margin: rem(51) auto 0;
+ max-width: rem(200);
+ height: rem(50);
+ margin: rem(30) auto 0;
  border-radius: 31px;
  background-color: $ac-color;
-
+ transition: .3s;
  
+ @include mq(tab) {
+   margin: rem(45) auto 0;
+   font-size: rem(16);
+   max-width: rem(260);
+   height: rem(60);
+   
+ }
+}
+
+.p-mv__btn:hover {
+  background-color: $text-color;
 }
 
 .p-mv__btn a {
@@ -43,7 +68,12 @@ margin-top: rem(25);
 }
 
 .p-mv__to-contact {
- margin-top: rem(22);
- font-size: rem(16);
+ margin-top: rem(17);
+ font-size: rem(12);
  text-decoration: underline;
+ 
+ @include mq(tab) {
+   font-size: rem(16);
+   
+ }
 }

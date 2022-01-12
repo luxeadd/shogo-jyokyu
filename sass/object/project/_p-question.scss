@@ -1,0 +1,17 @@
+.p-question {
+padding-bottom: rem(40);
+
+@include mq(tab) {
+  padding-bottom: rem(83);
+  
+}
+}
+
+.p-question__title {
+ text-align: center;
+}
+
+.p-question__body {
+ margin-top: rem(19);
+
+}

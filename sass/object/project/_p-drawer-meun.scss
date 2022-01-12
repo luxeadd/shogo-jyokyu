@@ -8,7 +8,7 @@
   right: 0;
   bottom: 0;
   overflow-y: scroll;
-  background-color: #000;
+  background-color: $text-color;
   color: #fff;
   transform: translateX(520px);
   transition: 0.3s;
@@ -23,17 +23,25 @@
 }
 
 .p-drawer-menu__items {
-
+  padding: rem(100) 0 rem(50);
 }
 
 .p-drawer-menu__item {
-
+  border-bottom: 1px solid $white;
   
 }
 
+.p-drawer-menu__item:first-child {
+ border-top: 1px solid $white;
+ }
+ 
 .p-drawer-menu__item a {
   display: inline-block;
   width: 100%;
   height: 100%;
+  text-align: center;
+  font-size: rem(20);
+  padding: rem(20)0;
+ 
 
 }
