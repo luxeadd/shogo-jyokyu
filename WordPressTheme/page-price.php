@@ -2,7 +2,7 @@
 
 <?php get_template_part( 'template-parts/sub-mv' ); ?>
 
-<div class="p-sub-price">
+<div class="p-sub-price l-sub-price">
   <div class="l-inner">
 
     <h2 class="p-sub-price__title1 c-section-title--small">料金体系</h2><!-- /.p-sub-price__title -->

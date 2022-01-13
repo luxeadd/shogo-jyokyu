@@ -548,8 +548,20 @@ summary {
 	padding-top: 5rem;
 }
 
+.l-sub-blog {
+	margin-top: 3.625rem;
+}
+
 .l-sub-mv {
 	margin-top: 3.125rem;
+}
+
+.l-sub-news {
+	margin-top: 3rem;
+}
+
+.l-sub-price {
+	margin-top: 1.875rem;
 }
 
 .c-btn-slide {
@@ -1461,8 +1473,115 @@ summary {
 	width: 100%;
 }
 
+.p-sub-blog {
+	padding-bottom: 2.8125rem;
+}
+
+.p-sub-blog__title {
+	text-align: center;
+}
+
+.p-sub-blog__body {
+	margin-top: 3.75rem;
+}
+
+.p-sub-blog__items {
+	margin-top: -3.75rem;
+}
+
+.p-sub-blog__item {
+	margin-top: 3.75rem;
+}
+
+.p-sub-blog__pagination {
+	margin-top: 6.25rem;
+}
+
+.p-sub-card-long {
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+}
+
+.p-sub-card-long a {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	position: relative;
+	width: 100%;
+}
+
+.p-sub-card-long a:hover .p-sub-card-long__figure img {
+	transform: scale(1.3) translate(-40%, -40%);
+}
+
+.p-sub-card-long__header {
+	height: inherit;
+	width: 100%;
+}
+
+.p-sub-card-long__figure {
+	height: inherit;
+	overflow: hidden;
+	position: relative;
+}
+
+.p-sub-card-long__figure::before {
+	content: "";
+	display: block;
+	padding-top: 61.66667%;
+}
+
+.p-sub-card-long__figure img {
+	-o-object-fit: cover;
+	-o-object-position: center;
+	height: 100%;
+	left: 50%;
+	object-fit: cover;
+	object-position: center;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	transition: all .3s;
+	width: 100%;
+}
+
+.p-sub-card-long__body {
+	display: flex;
+	flex-direction: column;
+	margin-top: 1.875rem;
+	width: 100%;
+}
+
+.p-sub-card-long__title {
+	font-size: 1.125rem;
+	font-weight: 700;
+	line-height: 1.6875;
+	text-decoration: underline;
+}
+
+.p-sub-card-long__category {
+	background-color: #1B224C;
+	color: #fff;
+	font-size: 0.75rem;
+	left: 0;
+	padding: 0.25rem 0.5625rem;
+	position: absolute;
+	top: 0;
+}
+
+.p-sub-card-long__time {
+	font-size: 1rem;
+}
+
+.p-sub-card-long__text {
+	font-size: 1rem;
+	line-height: 1.5;
+	margin-top: 0.9375rem;
+}
+
 .p-sub-news {
-	padding: 3rem 0 3.625rem;
+	padding-bottom: 3.625rem;
 }
 
 .p-sub-news__title {
@@ -1478,8 +1597,7 @@ summary {
 }
 
 .p-sub-price {
-	margin-top: 3.625rem;
-	padding-bottom: 3.8125rem;
+	padding-bottom: 1.875rem;
 }
 
 .p-sub-price__title1 {
@@ -1490,17 +1608,23 @@ summary {
 	margin-top: 3.75rem;
 }
 
+.p-sub-price__body-contents {
+	margin-top: -1.875rem;
+}
+
 .p-sub-price__body-content {
 	align-items: center;
 	background-color: #1B224C;
 	color: #fff;
 	display: flex;
-	font-size: 1.375rem;
+	font-size: 1.125rem;
 	font-weight: 700;
-	height: 5.625rem;
+	height: 3.75rem;
 	justify-content: center;
-	margin-left: 6.125rem;
-	max-width: 17.5rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1.875rem;
+	max-width: 12.5rem;
 	position: relative;
 	width: 100%;
 }
@@ -1510,9 +1634,9 @@ summary {
 	content: "";
 	display: block;
 	height: 0.125rem;
-	left: -3.0625rem;
+	left: 50%;
 	position: absolute;
-	top: 50%;
+	top: -0.9375rem;
 	transform: translateX(-50%);
 	width: 1.125rem;
 }
@@ -1522,40 +1646,39 @@ summary {
 	content: "";
 	display: block;
 	height: 1.125rem;
-	left: -3.125rem;
+	left: 49.5%;
 	position: absolute;
-	top: 51%;
-	transform: translateX(-50%);
+	top: -0.875rem;
 	transform: translateY(-50%);
 	width: 0.125rem;
 }
 
 .p-sub-price__body-text {
-	font-size: 1rem;
+	font-size: 0.875rem;
 	line-height: 1.6875;
 	margin-top: 2.8125rem;
 }
 
 .p-sub-price__title2 {
-	margin-top: 5.625rem;
+	margin-top: 3.75rem;
 	text-align: center;
 }
 
 .p-sub-price__block {
-	margin-top: 4.375rem;
+	margin-top: 3.125rem;
 }
 
 .p-sub-price__block-items {
-	align-items: flex-end;
-	display: flex;
-	margin-left: -0.4375rem;
+	margin-top: -1.25rem;
 }
 
 .p-sub-price__block-item {
 	border: 1px solid #1B224C;
-	margin-left: 0.4375rem;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1.25rem;
+	max-width: 17.5rem;
 	text-align: center;
-	width: calc(25% - 0.4375rem * 4 / 4);
 }
 
 .p-sub-price__block-item:nth-child(3) .p-sub-price__block-item-top {
@@ -1577,8 +1700,8 @@ summary {
 }
 
 .p-sub-price__block-item-bottom {
-	height: 29.5rem;
-	padding: 1.875rem 0 0;
+	height: auto;
+	padding: 1.25rem 0 2.5rem;
 }
 
 .p-sub-price__block-price {
@@ -1589,6 +1712,12 @@ summary {
 .p-sub-price__block-price-sub {
 	font-size: 1rem;
 	margin-top: 0.625rem;
+}
+
+.p-sub-price__block-text-box {
+	margin-top: 1.25rem;
+	padding-left: 1.875rem;
+	padding-right: 0.3125rem;
 }
 
 .p-sub-price__block-text {
@@ -1603,10 +1732,10 @@ summary {
 	content: "";
 	display: block;
 	height: 0.5625rem;
-	left: -1.3125rem;
+	left: -1.125rem;
 	position: absolute;
 	top: 0;
-	transform: translateY(50%);
+	transform: translateY(100%);
 	width: 0.625rem;
 }
 
@@ -1962,6 +2091,10 @@ html {
 	margin-top: 5rem;
 }
 
+.l-sub-price {
+	margin-top: 3.625rem;
+}
+
 .c-section-title {
 	font-size: 2.25rem;
 }
@@ -2260,16 +2393,106 @@ html {
 	border: 1px solid #F5A623;
 }
 
+.p-sub-card-long a {
+	flex-direction: row;
+}
+
+.p-sub-card-long__header {
+	flex: 0 0 15rem;
+}
+
+.p-sub-card-long__figure::before {
+	padding-top: 61.66667%;
+}
+
+.p-sub-card-long__body {
+	flex: 0 1 40rem;
+	margin-left: 3.125rem;
+	margin-top: initial;
+}
+
+.p-sub-card-long__title {
+	font-size: 1.625rem;
+	margin-top: 0.9375rem;
+}
+
+.p-sub-price {
+	padding-bottom: 3.8125rem;
+}
+
+.p-sub-price__body {
+	margin-top: 3.75rem;
+}
+
 .p-sub-price__body-contents {
 	display: flex;
 	justify-content: center;
 	margin-left: -6.125rem;
 }
 
+.p-sub-price__body-content {
+	font-size: 1.375rem;
+	height: 5.625rem;
+	margin-left: 6.125rem;
+	margin-right: initial;
+	margin-top: initial;
+	max-width: 17.5rem;
+}
+
+.p-sub-price__body-content:nth-child(2):before {
+	left: -3.0625rem;
+	top: 50%;
+}
+
+.p-sub-price__body-content:nth-child(2)::after {
+	left: -3.125rem;
+	top: 51%;
+	transform: translateX(-50%);
+}
+
+.p-sub-price__body-text {
+	font-size: 1rem;
+}
+
+.p-sub-price__title2 {
+	margin-top: 5.625rem;
+}
+
+.p-sub-price__block {
+	margin-top: 4.375rem;
+}
+
+.p-sub-price__block-items {
+	align-items: stretch;
+	display: flex;
+	margin-left: -0.4375rem;
+	margin-top: initial;
+}
+
+.p-sub-price__block-item {
+	margin-left: 0.4375rem;
+	margin-right: initial;
+	margin-top: initial;
+	width: calc(25% - 0.4375rem * 4 / 4);
+}
+
+.p-sub-price__block-item:not(:nth-child(3)) {
+	margin-top: 2.1875rem;
+}
+
+.p-sub-price__block-item-bottom {
+	padding: 1.875rem 0 5.625rem;
+}
+
 .p-sub-price__block-text-box {
+	display: block;
 	margin-top: 2.5rem;
 	padding-left: 1.875rem;
 	padding-right: 0.625rem;
+}
+
+.p-sub-price__block-text::before {
+	left: -1.3125rem;
 }
 
 .p-success {

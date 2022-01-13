@@ -3,7 +3,7 @@
 <?php get_template_part( 'template-parts/sub-mv' ); ?>
 
 
-<div class="p-sub-news">
+<div class="p-sub-news l-sub-news">
   <div class="l-inner">
     <h2 class="p-sub-news__title c-section-title--small">お知らせ一覧</h2><!-- /.p-sub-news__title c-section-title--small -->
 
