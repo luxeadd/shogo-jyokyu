@@ -3,7 +3,7 @@
   
   @include mq(tab) {
     
-    padding-bottom: rem(61);
+    padding-bottom: rem(44);
     
   }
 
@@ -17,7 +17,7 @@
 .p-sub-price__body {
   margin-top: rem(60);
   @include mq(tab) {
-    margin-top: rem(60);
+    margin-top: rem(83);
     
   }
 
@@ -74,8 +74,9 @@
   background-color:  #1B224C;
   
   @include mq(tab) {
-    left: rem(-49);
+    left: rem(-50);
     top: 50%;
+    width: rem(27);
     
   }
 
@@ -94,13 +95,14 @@
   @include mq(tab) {
     transform: translateX(-50%);
     left: rem(-50);
-    top: 51%;
+    top: 36%;
+    height: rem(27);
   }
 
 }
 
 .p-sub-price__body-text {
- margin-top: rem(45);
+ margin-top: rem(40);
  font-size: rem(14);
  line-height: (27 / 16);
  
@@ -115,7 +117,7 @@
   text-align: center;
   
   @include mq(tab) {
-    margin-top: rem(90);
+    margin-top: rem(86);
     
   }
 }
@@ -124,7 +126,7 @@
   margin-top: rem(50);
   
   @include mq(tab) {
-    margin-top: rem(70);
+    margin-top: rem(64);
     
 
   }
@@ -192,7 +194,7 @@
   height: auto;
   
   @include mq(tab) {
-    padding: rem(30) 0 rem(90);
+    padding: rem(21) 0 rem(90);
     
   }
 
@@ -205,7 +207,6 @@
 }
 
 .p-sub-price__block-price-sub {
-   margin-top: rem(10);
    font-size: rem(16);
 
 }
@@ -220,7 +221,7 @@
     display: block;
     padding-left: rem(30);
     padding-right: rem(10);
-    margin-top: rem(40);
+    margin-top: rem(24);
     
   }
 
@@ -237,8 +238,11 @@
 .p-sub-price__block-text {
    font-size: (16);
    position: relative;
-   margin-top: rem(18);
    display: inline-block;
+}
+
+.p-sub-price__block-text + .p-sub-price__block-text {
+  margin-top: rem(15);
 }
 
 .p-sub-price__block-text::before {
@@ -255,7 +259,10 @@
   
   @include mq(tab) {
     left: rem(-21);
-    
+    width: rem(18);
+    height: rem(12);
+    left: rem(-30);
+    transform: translateY(50%);
   }
 }
 
