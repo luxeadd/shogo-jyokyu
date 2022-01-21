@@ -28,12 +28,50 @@ margin-top: rem(30);
 
 .p-use__item {
   margin-top: rem(15);
+  opacity: 0;
   
   @include mq(tab) {
     margin-top: rem(8);
    display: flex;
    
  }
+}
+
+.p-use__item:nth-child(1).is-animated {
+  animation-name: fadeInDown;
+  animation-fill-mode:forwards;/*開始と終了の状態*/
+  animation-duration:.5s;/*アニメーションの長さ*/
+  animation-timing-function:linear;/*アニメーションの進行具合*/
+  animation-delay: 0.5s;/*アニメーションの開始を遅らせる*/
+  animation-direction:normal;/*アニメーションの向き*/
+
+}
+.p-use__item:nth-child(2).is-animated {
+  animation-name: fadeInDown;
+  animation-fill-mode:forwards;/*開始と終了の状態*/
+  animation-duration:.5s;/*アニメーションの長さ*/
+  animation-timing-function:linear;/*アニメーションの進行具合*/
+  animation-delay: 1.0s;/*アニメーションの開始を遅らせる*/
+  animation-direction:normal;/*アニメーションの向き*/
+
+}
+.p-use__item:nth-child(3).is-animated {
+  animation-name: fadeInDown;
+  animation-fill-mode:forwards;/*開始と終了の状態*/
+  animation-duration:.5s;/*アニメーションの長さ*/
+  animation-timing-function:linear;/*アニメーションの進行具合*/
+  animation-delay: 1.5s;/*アニメーションの開始を遅らせる*/
+  animation-direction:normal;/*アニメーションの向き*/
+ 
+}
+.p-use__item:nth-child(4).is-animated {
+  animation-name: fadeInDown;
+  animation-fill-mode:forwards;/*開始と終了の状態*/
+  animation-duration:.5s;/*アニメーションの長さ*/
+  animation-timing-function:linear;/*アニメーションの進行具合*/
+  animation-delay: 2.0s;/*アニメーションの開始を遅らせる*/
+  animation-direction:normal;/*アニメーションの向き*/
+  
 }
 
 .p-use__number{

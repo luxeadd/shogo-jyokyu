@@ -39,6 +39,10 @@ color: $white;
  border-radius: 25px;
  margin-top: rem(16);
  transition: .3s;
+
+ animation-name: bururi;/*1で解説*/
+ animation-duration:1.0s;/*アニメーションの長さ*/
+ animation-iteration-count:infinite;/*動きのループ*/
  
  @include mq(tab) {
    max-width: rem(280);

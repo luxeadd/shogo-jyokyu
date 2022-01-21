@@ -3,6 +3,8 @@
   color: $white;
   padding: rem(30) 0 rem(30);
   text-align: center;
+
+ 
   
   @include mq(tab) {
     padding: rem(54) 0 rem(54);
@@ -13,6 +15,13 @@
 .p-message__title {
   font-size: rem(26);
   font-weight: 700;
+
+  animation-name: fadeIn;/*1で解説*/
+  animation-fill-mode:forwards;/*開始と終了の状態*/
+  animation-duration:2.0s;/*アニメーションの長さ*/
+  animation-timing-function:linear;/*アニメーションの進行具合*/
+  animation-direction:normal;/*アニメーションの向き*/
+  opacity: 0;
   
   @include mq(tab) {
     font-size: rem(36);
@@ -36,6 +45,7 @@
 .p-message__item {
   font-size: rem(14);
   line-height: (39 / 18);
+  opacity: 0;
   
   @include mq(tab) {
     font-size: rem(18);
@@ -60,6 +70,34 @@
     
   }
 
+}
+
+.p-message__item:nth-child(1).is-animated {
+  animation-name: fadeInUp;/*1で解説*/
+  animation-fill-mode:forwards;/*開始と終了の状態*/
+  animation-duration:0.5s;/*アニメーションの長さ*/
+  animation-delay: .5s;/*アニメーションの開始を遅らせ
+  animation-timing-function:linear;/*アニメーションの進行具合*/
+  animation-direction:normal;/*アニメーションの向き*/
+  
+}
+.p-message__item:nth-child(2).is-animated {
+  animation-name: fadeInUp;/*1で解説*/
+  animation-fill-mode:forwards;/*開始と終了の状態*/
+  animation-duration:0.5s;/*アニメーションの長さ*/
+  animation-delay: 1.0s;/*アニメーションの開始を遅らせる*/
+  animation-timing-function:linear;/*アニメーションの進行具合*/
+  animation-direction:normal;/*アニメーションの向き*/
+ 
+}
+.p-message__item:nth-child(3).is-animated {
+  animation-name: fadeInUp;/*1で解説*/
+  animation-fill-mode:forwards;/*開始と終了の状態*/
+  animation-duration:0.5s;/*アニメーションの長さ*/
+  animation-delay: 1.5s;/*アニメーションの開始を遅らせる*/
+  animation-timing-function:linear;/*アニメーションの進行具合*/
+  animation-direction:normal;/*アニメーションの向き*/
+  
 }
 
 .p-massage__main{
@@ -93,12 +131,23 @@
  font-size: rem(20);
  font-weight: 700;
  line-height: 1.41;
+ opacity: 0;
  
  @include mq(tab) {
    font-size: rem(36);
    
  }
  
+}
+
+.p-message__main-title.is-animated {
+  animation-name: fadeInUp;/*1で解説*/
+  animation-fill-mode:forwards;/*開始と終了の状態*/
+  animation-duration:1.0s;/*アニメーションの長さ*/
+  animation-timing-function:linear;/*アニメーションの進行具合*/
+  animation-direction:normal;/*アニメーションの向き*/
+  animation-delay: 2.0s;/*アニメーションの開始を遅らせる*/
+  
 }
 
 .p-message__main-title span {

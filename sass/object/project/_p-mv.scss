@@ -1,6 +1,14 @@
 .p-mv {
-  background: url(../img/fv.jpg) no-repeat center 37%  / cover;
+  background: url(../img/fv.jpg) no-repeat center 37%  / cover; 
+  animation-name: fadeIn;/*1で解説*/
+  animation-fill-mode:forwards;/*開始と終了の状態*/
+  animation-duration:1.0s;/*アニメーションの長さ*/
+  animation-timing-function:linear;/*アニメーションの進行具合*/
+  animation-direction:normal;/*アニメーションの向き*/
+  opacity: 0;
 }
+
+
 .p-mv__top{
   padding: rem(60) 0 rem(50);
   text-align: center;
@@ -44,6 +52,10 @@
  border-radius: 31px;
  background-color: $ac-color;
  transition: .3s;
+
+ animation-name: bururi;/*1で解説*/
+ animation-duration:1.0s;/*アニメーションの長さ*/
+ animation-iteration-count:infinite;/*動きのループ*/
  
  @include mq(tab) {
    margin: rem(45) auto 0;

@@ -13,11 +13,52 @@
 	border-bottom: 1px dotted #cccccc;
   position: relative;
   border-bottom: 1px solid $text-color;
- 
+ opacity: 0;
 }
 .p-toggle__item:first-child {
   border-top: 1px solid $text-color;
 }
+
+.p-toggle__item:nth-child(1).is-animated {
+  animation-name: fadeInDown;/*1で解説*/
+  animation-fill-mode:forwards;/*開始と終了の状態*/
+  animation-duration:.5s;/*アニメーションの長さ*/
+  animation-timing-function:linear;/*アニメーションの進行具合*/
+  animation-delay: 0.5s;/*アニメーションの開始を遅らせる*/
+  animation-direction:normal;/*アニメーションの向き*/
+  
+}
+
+.p-toggle__item:nth-child(2).is-animated {
+  animation-name: fadeInDown;/*1で解説*/
+  animation-fill-mode:forwards;/*開始と終了の状態*/
+  animation-duration:.5s;/*アニメーションの長さ*/
+  animation-timing-function:linear;/*アニメーションの進行具合*/
+  animation-delay: 1.0s;/*アニメーションの開始を遅らせる*/
+  animation-direction:normal;/*アニメーションの向き*/
+  
+}
+
+.p-toggle__item:nth-child(3).is-animated {
+  animation-name: fadeInDown;/*1で解説*/
+  animation-fill-mode:forwards;/*開始と終了の状態*/
+  animation-duration:.5s;/*アニメーションの長さ*/
+  animation-timing-function:linear;/*アニメーションの進行具合*/
+  animation-delay: 1.5s;/*アニメーションの開始を遅らせる*/
+  animation-direction:normal;/*アニメーションの向き*/
+  
+}
+
+.p-toggle__item:nth-child(4).is-animated {
+  animation-name: fadeInDown;/*1で解説*/
+  animation-fill-mode:forwards;/*開始と終了の状態*/
+  animation-duration:.5s;/*アニメーションの長さ*/
+  animation-timing-function:linear;/*アニメーションの進行具合*/
+  animation-delay: 2.0s;/*アニメーションの開始を遅らせる*/
+  animation-direction:normal;/*アニメーションの向き*/
+  
+}
+
 
 .p-toggle__label {
  font-size: rem(14);
