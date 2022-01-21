@@ -1,0 +1,116 @@
+.p-sub-contact {
+  padding-bottom: rem(40);
+  
+  @include mq(tab) {
+    padding-bottom: rem(80);
+    
+  }
+ 
+ }
+ 
+ .p-sub-contact__inner {
+  @include mq(tab) {
+   max-width: 700px + strip-unit($padding-pc) * 2;
+   padding-right: $padding-pc;
+   padding-left: $padding-pc;
+  }
+ }
+ 
+ .p-sub-contact__text {
+   font-size: rem(14);
+   line-height: (27 / 16);
+ 
+   @include mq(tab) {
+     font-size: rem(16);
+ 
+   }
+ 
+ }
+ 
+ .p-sub-contact__contents {
+   margin-top: rem(20);
+   
+   @include mq(tab) {
+     margin-top: rem(41);
+     
+   }
+ 
+ }
+ 
+ .p-sub-contact__content + 
+ .p-sub-contact__content {
+ margin-top: rem(20);  
+ }
+ 
+ .p-sub-contact__head {
+  //  display: flex;
+   align-items: center;
+ }
+ 
+ .p-sub-contact__title {
+     font-size: rem(16);
+     line-height: (27 / 16);
+     margin-right: rem(10);
+ 
+ }
+
+ .p-sub-contact__title span {
+   font-weight: 700;
+   margin-left: rem(-10);
+
+   @include mq(tab) {
+     margin-left: initial;
+   }
+ }
+ 
+//  .p-sub-contact__required {
+//   font-size: rem(12);
+//   padding: rem(3) rem(5);
+//   line-height: 1;
+//   background:#333;
+//   color: #fff;
+ 
+//  }
+ 
+ .p-sub-contact__item {
+   margin-top: rem(12);
+   
+ }
+ 
+ 
+ 
+ .p-sub-contact__content.p-sub-contact__content--checkbox {
+   margin-top: rem(20);
+   text-align: center;
+   @include mq(tab) {
+     margin-top: rem(33);
+     
+   }
+ }
+
+ .p-sub-contact__link {
+   margin-top: rem(20);
+   font-size: rem(16);
+   display: block;
+   text-align: center;
+   
+   @include mq(tab) {
+     margin-top: rem(30);
+     
+   }
+ }
+
+ .p-sub-contact__link a {
+   color: $ac-color;
+   text-decoration: underline;
+ }
+
+ .p-sub-contact__content.p-sub-contact__content--button {
+  margin-top: rem(25);
+  text-align: center;
+  
+  @include mq(tab) {
+    margin-top: rem(58);
+    
+  }
+}

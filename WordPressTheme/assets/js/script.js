@@ -30,8 +30,11 @@ drawerMenuItem.addEventListener('click', () => {
 });
 
 
-
-
+new ScrollHint('.js-scrollable', {
+  i18n: {
+    scrollable: 'スクロールできます'
+  }
+});
 
 // ローディング判定
 jQuery(function ($) {

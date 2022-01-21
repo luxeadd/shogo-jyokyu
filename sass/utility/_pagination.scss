@@ -34,10 +34,12 @@
 	background-color: $text-color;
 	border-color: $text-color;
 	font-weight: bold;
+	
     }
 
   .wp-pagenavi .smaller,
-  .wp-pagenavi .larger {
+  .wp-pagenavi .larger,
+	.wp-pagenavi .current {
     margin-top: rem(12);
 
     @include mq(tab) {

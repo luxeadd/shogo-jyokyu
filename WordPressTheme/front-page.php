@@ -93,44 +93,44 @@
       <ul class="p-success__items">
         <li class="p-success__item">
           <p class="p-success__text">
-          TOEFL iBT 100点を突破してコロンビア大学大学院に進学できました！
+          <?php the_field('success_text1'); ?>
           </p><!-- /.p-success__text -->
            <div class="p-success__img">
-             <img src="<?php echo get_template_directory_uri(  ) ?>/assets/img/success-1.jpg" alt="成功事例1">
+             <img src="<?php the_field('success_image1'); ?>" alt="成功事例1">
            </div><!-- /.p-success__img -->
 
            <div class="p-success__block">
-             <div class="p-success__profile">会社員</div><!-- /.p-success__profile -->
-             <div class="p-success__profile">T.Fujiyamaさん</div><!-- /.p-success__profile -->
-             <div class="p-success__profile">3ヶ月でTOEFL80→108点</div><!-- /.p-success__profile -->
+             <div class="p-success__profile">   <?php the_field('success_worker1'); ?></div><!-- /.p-success__profile -->
+             <div class="p-success__profile"><?php the_field('success_name1'); ?></div><!-- /.p-success__profile -->
+             <div class="p-success__profile">   <?php the_field('success_commit1'); ?></div><!-- /.p-success__profile -->
            </div><!-- /.p-success__block -->
         </li><!-- /.success__item -->
         <li class="p-success__item">
           <p class="p-success__text">
-          半年でTOEFL 40点→100点を達成！コロンビア大学大学院に合格
+          <?php the_field('success_text2'); ?>
           </p><!-- /.p-success__text -->
            <div class="p-success__img">
-             <img src="<?php echo get_template_directory_uri(  ) ?>/assets/img/success-2.jpg" alt="成功事例2">
+             <img src="<?php the_field('success_image2'); ?>" alt="成功事例2">
            </div><!-- /.p-success__img -->
 
            <div class="p-success__block">
-             <div class="p-success__profile">大学生</div><!-- /.p-success__profile -->
-             <div class="p-success__profile">Y.Takiyamaさん</div><!-- /.p-success__profile -->
-             <div class="p-success__profile">6ヶ月でTOEFL40→100点</div><!-- /.p-success__profile -->
+             <div class="p-success__profile"><?php the_field('success_worker2'); ?></div><!-- /.p-success__profile -->
+             <div class="p-success__profile"><?php the_field('success_name2'); ?></div><!-- /.p-success__profile -->
+             <div class="p-success__profile">6<?php the_field('success_commit2'); ?></div><!-- /.p-success__profile -->
            </div><!-- /.p-success__block -->
         </li><!-- /.success__item -->
         <li class="p-success__item">
           <p class="p-success__text">
-          早稲田大学 国際教養学部AO入試合格！TOEFL iBT 109点
+          <?php the_field('success_text3'); ?>
           </p><!-- /.p-success__text -->
            <div class="p-success__img">
-             <img src="<?php echo get_template_directory_uri(  ) ?>/assets/img/success-3.jpg" alt="成功事例3">
+             <img src="<?php the_field('success_image3'); ?>" alt="成功事例3">
            </div><!-- /.p-success__img -->
 
            <div class="p-success__block">
-             <div class="p-success__profile">高校生</div><!-- /.p-success__profile -->
-             <div class="p-success__profile">M.Yamadaさん</div><!-- /.p-success__profile -->
-             <div class="p-success__profile">5ヶ月でTOEFL68→109点</div><!-- /.p-success__profile -->
+             <div class="p-success__profile"><?php the_field('success_worker3'); ?></div><!-- /.p-success__profile -->
+             <div class="p-success__profile"><?php the_field('success_name3'); ?></div><!-- /.p-success__profile -->
+             <div class="p-success__profile"><?php the_field('success_commit3'); ?></div><!-- /.p-success__profile -->
            </div><!-- /.p-success__block -->
         </li><!-- /.success__item -->
       </ul><!-- /.p-success__items -->
@@ -169,29 +169,103 @@
   </div><!-- /.l-inner -->
 </section><!-- /.p-use -->
 
+
+
 <section class="p-question">
   <div class="l-inner">
   <h2 class="p-question__title c-section-title">よくある質問</h2><!-- /.p-question -->
     <div class="p-question__body p-toggle">
       <div class="p-toggle__item">
         <input id="toggle1" type="checkbox" name="tabs">
-        <label class="p-toggle__label" for="toggle1">Engressはサラリーマンでも学習を続けられるでしょうか？</label>
-        <div class="p-toggle__item-content">Engressは各個人に最適な学習プランをご提供しております。サラリーマンの方でも継続できます。</div>
+        <label class="p-toggle__label" for="toggle1">
+          <?php
+          //グループのデータを取得
+          $group = get_field('question1');
+          if($group){
+          //グループ内のフィールドを出力
+          echo $group['question1_title'];
+          }
+          ?>
+        </label>
+        <div class="p-toggle__item-content">
+        <?php
+          //グループのデータを取得
+          $group = get_field('question1');
+          if($group){
+          //グループ内のフィールドを出力
+          echo $group['question1_anser'];
+          }
+          ?>
+        </div>
       </div>
       <div class="p-toggle__item">
         <input id="toggle2" type="checkbox" name="tabs">
-        <label class="p-toggle__label" for="toggle2">教材はオリジナルのものを使用しているのでしょうか？</label>
-        <div class="p-toggle__item-content">Engressは各個人に最適な学習プランをご提供しております。サラリーマンの方でも継続できます。</div>
+        <label class="p-toggle__label" for="toggle2">  <?php
+          //グループのデータを取得
+          $group = get_field('question2');
+          if($group){
+          //グループ内のフィールドを出力
+          echo $group['question2_title'];
+          }
+          ?>
+          </label>
+        <div class="p-toggle__item-content">
+        <?php
+          //グループのデータを取得
+          $group = get_field('question2');
+          if($group){
+          //グループ内のフィールドを出力
+          echo $group['question2_anser'];
+          }
+          ?>
+        </div>
       </div>
       <div class="p-toggle__item">
         <input id="toggle3" type="checkbox" name="tabs">
-        <label class="p-toggle__label" for="toggle3">講師に日本人はいますか？</label>
-        <div class="p-toggle__item-content">Engressは各個人に最適な学習プランをご提供しております。サラリーマンの方でも継続できます。</div>
+        <label class="p-toggle__label" for="toggle3"> 
+          <?php
+          //グループのデータを取得
+          $group = get_field('question3');
+          if($group){
+          //グループ内のフィールドを出力
+          echo $group['question3_title'];
+          }
+          ?>
+
+        </label>
+        <div class="p-toggle__item-content">
+        <?php
+          //グループのデータを取得
+          $group = get_field('question3');
+          if($group){
+          //グループ内のフィールドを出力
+          echo $group['question3_anser'];
+          }
+          ?>
+        </div>
       </div>
       <div class="p-toggle__item">
         <input id="toggle4" type="checkbox" name="tabs">
-        <label class="p-toggle__label" for="toggle4">TOEFL以外の海外大学合格のサポートもしてもらえるのでしょうか？</label>
-        <div class="p-toggle__item-content">Engressは各個人に最適な学習プランをご提供しております。サラリーマンの方でも継続できます。</div>
+        <label class="p-toggle__label" for="toggle4">
+        <?php
+          //グループのデータを取得
+          $group = get_field('question4');
+          if($group){
+          //グループ内のフィールドを出力
+          echo $group['question4_title'];
+          }
+          ?>
+        </label>
+        <div class="p-toggle__item-content">
+        <?php
+          //グループのデータを取得
+          $group = get_field('question4');
+          if($group){
+          //グループ内のフィールドを出力
+          echo $group['question4_anser'];
+          }
+          ?>
+        </div>
       </div>
   </div>
   </div><!-- /.l-inner -->
@@ -207,51 +281,52 @@
         <div class="p-post__blog-body">
           <div class="p-post__blog-items">
 
-            <article class="p-post__blog-item p-card-long">
-              <a href="">
+<?php
+$top_blog_query = new WP_Query(
+array(
+'post_type'      => 'post', 
+'posts_per_page' => 3, 
+)
+);
+?>
+<?php if ( $top_blog_query->have_posts() ) : ?>
+<?php while ( $top_blog_query->have_posts() ) : ?>
+<?php $top_blog_query->the_post(); ?>
+
+<!-- コンテンツ -->
+          <article class="p-post__blog-item p-card-long">
+              <a href="<?php the_permalink(); //記事のリンクを表示 ?>">
                 <div class="p-card-long__header">
                   <figure class="p-card-long__figure">
-                    <img src="<?php echo get_template_directory_uri(  ) ?>/assets/img/sample01.jpg" alt="">
+                  <?php
+                      if (has_post_thumbnail() ) {
+                      // アイキャッチ画像が設定されてれば大サイズで表示
+                      the_post_thumbnail('large');
+                      } 
+                      ?>
                   </figure>
-                  <div class="p-card-long__category">カテゴリー</div>
+                  <?php
+                    // カテゴリー１つ目の名前を表示
+                    $category = get_the_category();
+                    if ($category[0] ) {
+                    echo '<div class="p-card-long__category">' . $category[0]->cat_name . '</div>';
+                    }
+                    ?>
                 </div><!-- /.p-news-card__header -->
                 <div class="p-card-long__body">
-                  <h3 class="p-card-long__title">Engress説明会in大阪の模様をお伝えします</h3>
+                  <h3 class="p-card-long__title"><?php the_title(); //タイトルを表示 ?></h3>
                   <time class="p-card-long__time" datetime="<?php the_time( 'c' ) ; ?>"><?php the_time('Y-m-j'); ?></time>
                 </div><!-- /.p-card-long__body -->
               </a>
             </article>
 
-            <article class="p-post__blog-item p-card-long">
-              <a href="">
-                <div class="p-card-long__header">
-                  <figure class="p-card-long__figure">
-                    <img src="<?php echo get_template_directory_uri(  ) ?>/assets/img/sample02.jpg" alt="">
-                  </figure>
-                  <div class="p-card-long__category">カテゴリー</div>
-                </div><!-- /.p-news-card__header -->
-                <div class="p-card-long__body">
-                  <h3 class="p-card-long__title">Engress説明会in大阪の模様をお伝えします</h3>
-                  <time class="p-card-long__time" datetime="<?php the_time( 'c' ) ; ?>"><?php the_time('Y-m-j'); ?></time>
-                </div><!-- /.p-card-long__body -->
-              </a>
-            </article>
+<?php endwhile; ?>
+<?php endif; ?>
+<?php wp_reset_postdata(); ?> <!-- post_typeなどを強制的に上書きしているため初期化 -->
 
-            <article class="p-post__blog-item p-card-long">
-              <a href="">
-                <div class="p-card-long__header">
-                  <figure class="p-card-long__figure">
-                    <img src="<?php echo get_template_directory_uri(  ) ?>/assets/img/sample03.jpg" alt="">
-                  </figure>
-                  <div class="p-card-long__category">カテゴリー</div>
-                </div><!-- /.p-news-card__header -->
-                <div class="p-card-long__body">
-                  <h3 class="p-card-long__title">Engress説明会in大阪の模様をお伝えします</h3>
-                  <time class="p-card-long__time" datetime="<?php the_time( 'c' ) ; ?>"><?php the_time('Y-m-j'); ?></time>
-                </div><!-- /.p-card-long__body -->
-              </a>
-            </article>
-            
+       
+
+           
           </div><!-- /.p-post__blog-items -->
         </div><!-- /.p-post__blog-body -->
       </div><!-- /.p-post__blog -->
@@ -260,18 +335,32 @@
         <h2 class="p-post__news-title c-section-title--small">お知らせ</h2><!-- /.p-post__news-title -->
         <div class="p-post__news-body">
           <div class="p-post__news-items">
+
+<?php
+$news_query = new WP_Query(
+array(
+'post_type'      => 'news',
+'posts_per_page' => 3, 
+)
+);
+?>
+<?php if ( $news_query->have_posts() ) : ?>
+<?php while ( $news_query->have_posts() ) : ?>
+<?php $news_query->the_post(); ?>
+
+<!-- コンテンツ -->
             <article class="p-post__news-item">
               <time class="p-post__news-time" datetime="<?php the_time( 'c' ) ; ?>"><?php the_time('Y-m-j'); ?></time>
-              <a class="p-post__news-text" href="">2021年のスケジュールについて</a>
+              <a class="p-post__news-text" href="<?php the_permalink(); //記事のリンクを表示 ?>"><?php the_title(); //タイトルを表示 ?></a>
             </article>
-            <article class="p-post__news-item">
-              <time class="p-post__news-time" datetime="<?php the_time( 'c' ) ; ?>"><?php the_time('Y-m-j'); ?></time>
-              <a class="p-post__news-text" href="">2021年のスケジュールについて</a>
-            </article>
-            <article class="p-post__news-item">
-              <time class="p-post__news-time" datetime="<?php the_time( 'c' ) ; ?>"><?php the_time('Y-m-j'); ?></time>
-              <a class="p-post__news-text" href="">2021年のスケジュールについて</a>
-            </article>
+            
+
+<?php endwhile; ?>
+<?php endif; ?>
+<?php wp_reset_postdata(); ?> <!-- post_typeなどを強制的に上書きしているため初期化 -->
+
+            
+
           </div><!-- /.p-post__news-items -->
         </div><!-- /.p-post__news-body -->
       </div><!-- /.p-post__news -->

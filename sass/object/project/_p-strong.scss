@@ -38,20 +38,30 @@
   }
 }
 
-.p-strong__item:nth-child(even) {
-  @include mq(tab) {
-    flex-direction: row-reverse;
-  }
-}
-
 .p-strong__text-box{
 
   @include mq(tab) {
     flex:  0 1 rem(500);
-    
+    margin-right: rem(50);
   }
 
 }
+
+.p-strong__item:nth-child(even) {
+  @include mq(tab) {
+    flex-direction: row-reverse;
+  }
+  
+  .p-strong__text-box {
+    
+    @include mq(tab) {
+      margin-left: rem(50);
+    }
+  }
+
+}
+
+
 
 .p-strong__category{
 display: inline-block;

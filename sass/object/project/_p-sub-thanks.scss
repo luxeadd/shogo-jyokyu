@@ -1,0 +1,26 @@
+.p-sub-thanks {
+  padding: rem(50) 0;
+  text-align: center;
+  
+  @include mq(tab) {
+    padding: rem(80) 0;
+    
+  }
+}
+
+.p-sub-thanks__text {
+  font-size: rem(16);
+  line-height: ( 27 / 16);
+  
+}
+
+.p-sub-thanks__link {
+  margin-top: rem(50);
+  display: block;
+  text-decoration: underline;
+
+  @include mq(tab) {
+    margin-top: rem(83);
+    
+  }
+}

@@ -149,3 +149,6 @@ function my_excerpt_more( $more ) {
 
 }
 add_filter( 'excerpt_more', 'my_excerpt_more' );
+
+
+//---------------------------------------------------------------

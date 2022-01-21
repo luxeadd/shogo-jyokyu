@@ -1,12 +1,20 @@
+<?php
+        $home = esc_url( home_url( "/" ));
+        $news = esc_url( home_url( "/news/" ));
+        $blog = esc_url( home_url( "/blog/" ));
+        $price = esc_url( home_url( "/price/" ));
+        $contact = esc_url( home_url( "/contact/" ));
+      ?>
+
 <footer class="p-footer">
   <div class="p-footer__top">
     <div class="p-footer__inner">
       <div class="p-footer__body">
         <div class="p-footer__items">
-          <div class="p-footer__item"><a href="">ホーム</a></div><!-- /.p-footer__item -->
-       <div class="p-footer__item"><a href="">お知らせ</a></div><!-- /.p-footer__item -->
-       <div class="p-footer__item"><a href="">ブログ</a></div><!-- /.p-footer__item -->
-       <div class="p-footer__item"><a href="">コース・料金</a></div><!-- /.p-footer__item -->
+          <div class="p-footer__item"><a href="<?php echo $home ?>">ホーム</a></div><!-- /.p-footer__item -->
+       <div class="p-footer__item"><a href="<?php echo $news ?>">お知らせ</a></div><!-- /.p-footer__item -->
+       <div class="p-footer__item"><a href="<?php echo $blog ?>">ブログ</a></div><!-- /.p-footer__item -->
+       <div class="p-footer__item"><a href="<?php echo $price ?>">コース・料金</a></div><!-- /.p-footer__item -->
       </div><!-- /.p-footer__items -->
       
       <div class="p-footer__info">

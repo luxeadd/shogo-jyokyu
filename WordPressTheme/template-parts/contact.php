@@ -1,4 +1,13 @@
 <section class="p-contact">
+
+<?php
+$home = esc_url( home_url( "/" ));
+$news = esc_url( home_url( "/news/" ));
+$blog = esc_url( home_url( "/blog/" ));
+$price = esc_url( home_url( "/price/" ));
+$contact = esc_url( home_url( "/contact/" ));
+?>
+
    <div class="p-contact__body">
      <p class="p-contact__text">まずは無料で資料請求から</p><!-- /.p-contact-text -->
      <div class="p-contact__btn">

@@ -1,0 +1,66 @@
+
+input[type="checkbox"] {
+	display: none;
+}
+
+input[type="checkbox"] + span {
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 0.2em 0;
+	padding: 0 0 0 26px;
+	position: relative;
+  font-size: rem(14);
+  letter-spacing: 0.04em;
+  line-height: 1.714285;
+  
+  @include mq(tab) {
+    font-size: rem(16);
+
+  }
+
+}
+
+input[type="checkbox"] + span::before {
+	-webkit-transform: translateY(-50%);
+	background: #fff;
+	border: 1px solid #707070;
+	border-radius: 2px;
+	content: "";
+	display: block;
+	height: rem(20);
+	left: rem(-10);
+	position: absolute;
+	top: rem(11);
+	width: rem(20);
+
+  @include mq(tab) {
+    top: rem(13);
+  }
+}
+
+input[type="checkbox"] + span::after {
+	-webkit-transform: translateY(-50%) rotate(-45deg);
+	border-bottom: 3px solid #000;
+	border-left: 3px solid #000;
+	content: "";
+	display: block;
+	height: 0.6em;
+	left: rem(-8);
+	opacity: 0;
+	position: absolute;
+	top: rem(10);
+	transform: translateY(-50%) rotate(-45deg);
+	transition: all 0.3s ease 0s;
+	width: 1em;
+
+  @include mq(tab) {
+  	top: rem(11);
+  }
+}
+
+input[type="checkbox"]:checked + span::before{
+  background: #fff;
+}
+input[type="checkbox"]:checked + span::after {
+	opacity: 1;
+}

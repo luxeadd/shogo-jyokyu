@@ -1,0 +1,24 @@
+.p-contact-text {
+  width: 100%;
+  }
+  
+  .p-contact-text__text {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid  $text-color;
+    border-radius: 0;
+    color: inherit;
+    font-family: inherit;
+   
+    width: 100%;
+    
+  }
+  
+  .p-contact-text__text:focus {
+    border: 1px solid $ac-color;
+    box-shadow: none;
+    outline: none;
+  }

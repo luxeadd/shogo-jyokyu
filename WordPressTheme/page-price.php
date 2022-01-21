@@ -18,12 +18,12 @@
   
   <h2 class="p-sub-price__title2 c-section-title--small">料金表</h2><!-- /.p-sub-price__title2 -->
   <div class="p-sub-price__block">
-    <dl class="p-sub-price__block-items">
+    <dl class="p-sub-price__block-items js-scrollable">
 
       <div class="p-sub-price__block-item">
         <dt class="p-sub-price__block-item-top"> 基礎プラン</dt><!-- /.p-sub-price__block-item-top -->
         <dd class="p-sub-price__block-item-bottom">
-          <div class="p-sub-price__block-price">59,000円~</div><!-- /.p-sub-price__block-price -->
+          <div class="p-sub-price__block-price"><?php the_field('price1'); ?></div><!-- /.p-sub-price__block-price -->
           <div class="p-sub-price__block-price-sub">*月額（税抜価格）</div><!-- /.p-sub-price__block-price-sub -->
           <div class="p-sub-price__block-text-box">
             <p class="p-sub-price__block-text">カリキュラム作成</p><!-- /.p-sub-price__block-text -->
@@ -36,7 +36,7 @@
       <div class="p-sub-price__block-item">
         <dt class="p-sub-price__block-item-top"> 演習プラン</dt><!-- /.p-sub-price__block-item-top -->
         <dd class="p-sub-price__block-item-bottom">
-          <div class="p-sub-price__block-price">75,000円~</div><!-- /.p-sub-price__block-price -->
+          <div class="p-sub-price__block-price"><?php the_field('price2'); ?></div><!-- /.p-sub-price__block-price -->
           <div class="p-sub-price__block-price-sub">*月額（税抜価格）</div><!-- /.p-sub-price__block-price-sub -->
           <div class="p-sub-price__block-text-box">
             <p class="p-sub-price__block-text">カリキュラム作成</p><!-- /.p-sub-price__block-text -->
@@ -49,7 +49,7 @@
       <div class="p-sub-price__block-item">
         <dt class="p-sub-price__block-item-top"> おすすめ<br>志望校対策プラン</dt><!-- /.p-sub-price__block-item-top -->
         <dd class="p-sub-price__block-item-bottom">
-          <div class="p-sub-price__block-price">95,000円~</div><!-- /.p-sub-price__block-price -->
+          <div class="p-sub-price__block-price"><?php the_field('price3'); ?></div><!-- /.p-sub-price__block-price -->
           <div class="p-sub-price__block-price-sub">*月額（税抜価格）</div><!-- /.p-sub-price__block-price-sub -->
           <div class="p-sub-price__block-text-box">
             <p class="p-sub-price__block-text">カリキュラム作成</p><!-- /.p-sub-price__block-text -->
@@ -63,7 +63,7 @@
       <div class="p-sub-price__block-item">
         <dt class="p-sub-price__block-item-top"> フレックスプラン</dt><!-- /.p-sub-price__block-item-top -->
         <dd class="p-sub-price__block-item-bottom">
-          <div class="p-sub-price__block-price">60,000円~</div><!-- /.p-sub-price__block-price -->
+          <div class="p-sub-price__block-price"><?php the_field('price4'); ?></div><!-- /.p-sub-price__block-price -->
           <div class="p-sub-price__block-price-sub">*月額（税抜価格）</div><!-- /.p-sub-price__block-price-sub -->
           <div class="p-sub-price__block-text-box">
             <p class="p-sub-price__block-text">別途ご相談下さい</p><!-- /.p-sub-price__block-text -->
