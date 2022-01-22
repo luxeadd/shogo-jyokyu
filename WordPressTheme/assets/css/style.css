@@ -3083,6 +3083,12 @@ textarea {
 	margin-top: 0.75rem;
 }
 
+.btn-0 .btn {
+	border-radius: 0.3125rem;
+	display: inline-block;
+	padding: 0.0625rem 0.625rem 0.0625rem 0.625rem;
+}
+
 .pc-only {
 	display: none;
 }
