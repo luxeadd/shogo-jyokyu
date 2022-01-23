@@ -43,6 +43,7 @@
 
  .p-single-blog__info  {
    display: flex;
+   justify-content: space-between;
    margin-top: rem(10);
    
    @include mq(tab) {
@@ -59,10 +60,10 @@
  
  .p-single-blog__time {
    display: flex;
-   justify-content: right;
+   justify-content: flex-end;
    width: rem(200);
 
-   margin-left: auto;
+  //  margin-left: auto;
    font-size: rem(12);
    
    @include mq(tab) {

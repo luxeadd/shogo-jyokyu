@@ -93,6 +93,7 @@ $pick_query = new WP_Query(
 array(
   'tag' => 'pickup',
   'posts_per_page' => 3, 
+  'orderby' => 'rand',
 )
 );
 ?>
@@ -183,7 +184,7 @@ $query -> the_post();
               ?>
             </figure> 
             <div class="p-aside__related-body">
-              <h3 class="p-aside__related-title">ブログタイトルテキストテキストテキストテキストテキストテキスト</h3><!-- /.p-aside__related-title0 -->
+              <h3 class="p-aside__related-title"><?php the_title( ) ?></h3><!-- /.p-aside__related-title0 -->
             </div><!-- /.p-aside__related-body -->
           </a>
         </article>

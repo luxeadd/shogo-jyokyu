@@ -64,7 +64,7 @@ endwhile;
 
 
 <div class="p-sub-blog__pagination">
-  <?php get_template_part( 'template-parts/pagination' ); ?>
+<?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
 </div><!-- /.p-sub-blog__pagination -->
 
 </div><!-- /.p-sub-blog -->

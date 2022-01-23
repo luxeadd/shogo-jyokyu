@@ -17,10 +17,9 @@
 
 .p-single-news__time {
   display: flex;
-  justify-content: right;
-  width: rem(200);
+  justify-content: flex-end;
+  width: 100%;
   margin-top: rem(36);
-  margin-left: auto;
   font-size: rem(12);
   
   @include mq(tab) {

@@ -1601,13 +1601,13 @@ textarea {
 .p-news-item__meta {
 	align-items: center;
 	display: flex;
-	max-width: 5.3125rem;
 	width: 100%;
 }
 
 .p-news-item__date {
 	display: inline-block;
 	font-size: 1rem;
+	width: 100%;
 }
 
 .p-news-item__body {
@@ -1806,14 +1806,14 @@ textarea {
 
 .p-single-blog__info {
 	display: flex;
+	justify-content: space-between;
 	margin-top: 0.625rem;
 }
 
 .p-single-blog__time {
 	display: flex;
 	font-size: 0.75rem;
-	justify-content: right;
-	margin-left: auto;
+	justify-content: flex-end;
 	width: 12.5rem;
 }
 
@@ -1985,10 +1985,9 @@ textarea {
 .p-single-news__time {
 	display: flex;
 	font-size: 0.75rem;
-	justify-content: right;
-	margin-left: auto;
+	justify-content: flex-end;
 	margin-top: 2.25rem;
-	width: 12.5rem;
+	width: 100%;
 }
 
 .p-single-news__sub-title {
@@ -3347,6 +3346,10 @@ input[type="checkbox"] + span::after {
 .p-news-item {
 	display: flex;
 	padding-top: initial;
+}
+
+.p-news-item__meta {
+	max-width: 5.3125rem;
 }
 
 .p-news-item__body {
