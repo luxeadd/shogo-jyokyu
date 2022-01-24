@@ -26,9 +26,9 @@
   <div class="l-inner">
     <h2 class="p-message__title c-section-title">TOEFL学習で<br class="sp-only">こんな悩みありませんか？</h2><!-- /.p-message__title -->
     <ul class="p-message__items">
-      <li class="p-message__item js-scrollAnimation">勉強の習慣が<br class="pc-only">身についていない</li><!-- /.p-message__item -->
-      <li class="p-message__item js-scrollAnimation">勉強しているはず<br class="pc-only" >なのに点数が伸びない</li><!-- /.p-message__item -->
-      <li class="p-message__item js-scrollAnimation">正しい勉強方法が<br class="pc-only">わからない</li><!-- /.p-message__item -->
+      <li class="p-message__item ">勉強の習慣が<br class="pc-only">身についていない</li><!-- /.p-message__item -->
+      <li class="p-message__item ">勉強しているはず<br class="pc-only" >なのに点数が伸びない</li><!-- /.p-message__item -->
+      <li class="p-message__item ">正しい勉強方法が<br class="pc-only">わからない</li><!-- /.p-message__item -->
     </ul><!-- /.p-message__items -->
     <div class="p-massage__main">
       <p class="p-message__main-title js-scrollAnimation">Engressは<br><span>TOEFLに特化したスクール</span>です</p><!-- /.p-message__main-title -->

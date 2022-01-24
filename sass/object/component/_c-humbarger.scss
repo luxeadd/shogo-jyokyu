@@ -40,6 +40,12 @@ $hamburger-color2: #fff; //展開時ボランカラー
   background-color: $hamburger-color1;
   -webkit-transition: inherit;
           transition: inherit;
+
+     
+    @include mq(tab) {
+      width: rem(36);
+    }      
+
   }
 
   .c-hamburger__line::before,
@@ -57,9 +63,17 @@ $hamburger-color2: #fff; //展開時ボランカラー
 
 .c-hamburger__line::before {
   top: -5px;
+
+  @include mq(tab) {
+    top: -10px;
+  }
 }
 .c-hamburger__line::after {
   top: 5px;
+
+  @include mq(tab) {
+    top: 10px;
+  }
 }
 .c-hamburger[aria-expanded="true"] {
  

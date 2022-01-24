@@ -22,9 +22,8 @@
 .p-toggle__item:nth-child(1).is-animated {
   animation-name: fadeInDown;/*1で解説*/
   animation-fill-mode:forwards;/*開始と終了の状態*/
-  animation-duration:.5s;/*アニメーションの長さ*/
+  animation-duration:.4s;/*アニメーションの長さ*/
   animation-timing-function:linear;/*アニメーションの進行具合*/
-  animation-delay: 0.5s;/*アニメーションの開始を遅らせる*/
   animation-direction:normal;/*アニメーションの向き*/
   
 }
@@ -32,9 +31,9 @@
 .p-toggle__item:nth-child(2).is-animated {
   animation-name: fadeInDown;/*1で解説*/
   animation-fill-mode:forwards;/*開始と終了の状態*/
-  animation-duration:.5s;/*アニメーションの長さ*/
+  animation-duration:.4s;/*アニメーションの長さ*/
   animation-timing-function:linear;/*アニメーションの進行具合*/
-  animation-delay: 1.0s;/*アニメーションの開始を遅らせる*/
+  animation-delay: 0.4s;/*アニメーションの開始を遅らせる*/
   animation-direction:normal;/*アニメーションの向き*/
   
 }
@@ -42,9 +41,9 @@
 .p-toggle__item:nth-child(3).is-animated {
   animation-name: fadeInDown;/*1で解説*/
   animation-fill-mode:forwards;/*開始と終了の状態*/
-  animation-duration:.5s;/*アニメーションの長さ*/
+  animation-duration:.4s;/*アニメーションの長さ*/
   animation-timing-function:linear;/*アニメーションの進行具合*/
-  animation-delay: 1.5s;/*アニメーションの開始を遅らせる*/
+  animation-delay: 0.8s;/*アニメーションの開始を遅らせる*/
   animation-direction:normal;/*アニメーションの向き*/
   
 }
@@ -52,9 +51,9 @@
 .p-toggle__item:nth-child(4).is-animated {
   animation-name: fadeInDown;/*1で解説*/
   animation-fill-mode:forwards;/*開始と終了の状態*/
-  animation-duration:.5s;/*アニメーションの長さ*/
+  animation-duration:.4s;/*アニメーションの長さ*/
   animation-timing-function:linear;/*アニメーションの進行具合*/
-  animation-delay: 2.0s;/*アニメーションの開始を遅らせる*/
+  animation-delay: 1.2s;/*アニメーションの開始を遅らせる*/
   animation-direction:normal;/*アニメーションの向き*/
   
 }

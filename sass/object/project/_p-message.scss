@@ -45,7 +45,7 @@
 .p-message__item {
   font-size: rem(14);
   line-height: (39 / 18);
-  opacity: 0;
+  
   
   @include mq(tab) {
     font-size: rem(18);
@@ -72,33 +72,8 @@
 
 }
 
-.p-message__item:nth-child(1).is-animated {
-  animation-name: fadeInUp;/*1で解説*/
-  animation-fill-mode:forwards;/*開始と終了の状態*/
-  animation-duration:0.5s;/*アニメーションの長さ*/
-  animation-delay: .5s;/*アニメーションの開始を遅らせ
-  animation-timing-function:linear;/*アニメーションの進行具合*/
-  animation-direction:normal;/*アニメーションの向き*/
-  
-}
-.p-message__item:nth-child(2).is-animated {
-  animation-name: fadeInUp;/*1で解説*/
-  animation-fill-mode:forwards;/*開始と終了の状態*/
-  animation-duration:0.5s;/*アニメーションの長さ*/
-  animation-delay: 1.0s;/*アニメーションの開始を遅らせる*/
-  animation-timing-function:linear;/*アニメーションの進行具合*/
-  animation-direction:normal;/*アニメーションの向き*/
- 
-}
-.p-message__item:nth-child(3).is-animated {
-  animation-name: fadeInUp;/*1で解説*/
-  animation-fill-mode:forwards;/*開始と終了の状態*/
-  animation-duration:0.5s;/*アニメーションの長さ*/
-  animation-delay: 1.5s;/*アニメーションの開始を遅らせる*/
-  animation-timing-function:linear;/*アニメーションの進行具合*/
-  animation-direction:normal;/*アニメーションの向き*/
-  
-}
+
+
 
 .p-massage__main{
  margin-top: rem(40);
@@ -143,10 +118,10 @@
 .p-message__main-title.is-animated {
   animation-name: fadeInUp;/*1で解説*/
   animation-fill-mode:forwards;/*開始と終了の状態*/
-  animation-duration:1.0s;/*アニメーションの長さ*/
+  animation-duration:0.5s;/*アニメーションの長さ*/
   animation-timing-function:linear;/*アニメーションの進行具合*/
   animation-direction:normal;/*アニメーションの向き*/
-  animation-delay: 2.0s;/*アニメーションの開始を遅らせる*/
+  animation-delay: 0.5s;/*アニメーションの開始を遅らせる*/
   
 }
 

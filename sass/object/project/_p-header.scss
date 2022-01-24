@@ -2,6 +2,10 @@
   height: rem(50);
   background-color: $white;
 
+@include mq(tab) {
+  height: rem(80);
+}
+
   @include mq(lg) {
     height: rem(80);
     
@@ -26,6 +30,10 @@
    align-items: center;
    width: rem(100);
    
+  @include mq(tab) {
+    width: rem(136);
+  }
+
    @include mq(lg) {
      width: rem(136);
      
@@ -51,6 +59,11 @@
    top: rem(12);
    right: rem(20);
    z-index: 5;
+
+   @include mq(tab) {
+    top: rem(24);
+    right: rem(35);
+   }
  
  
  }

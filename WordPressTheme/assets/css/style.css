@@ -1400,7 +1400,6 @@ textarea {
 .p-message__item {
 	font-size: 0.875rem;
 	line-height: 2.16667;
-	opacity: 0;
 }
 
 .p-message__item:nth-child(2) {
@@ -1409,50 +1408,6 @@ textarea {
 
 .p-message__item:nth-child(3) {
 	margin-top: 1.25rem;
-}
-
-.p-message__item:nth-child(1).is-animated {
-	-webkit-animation-name: fadeInUp; /*1で解説*/
-	-webkit-animation-fill-mode: forwards; /*開始と終了の状態*/
-	-webkit-animation-duration: 0.5s; /*アニメーションの長さ*/
-	-webkit-animation-delay: .5s; /*アニメーションの開始を遅らせ
-  animation-timing-function:linear;/*アニメーションの進行具合*/
-	-webkit-animation-direction: normal;
-	animation-delay: .5s;
-	animation-direction: normal;
-	animation-duration: 0.5s;
-	animation-fill-mode: forwards;
-	animation-name: fadeInUp; /*アニメーションの向き*/
-}
-
-.p-message__item:nth-child(2).is-animated {
-	-webkit-animation-name: fadeInUp; /*1で解説*/
-	-webkit-animation-fill-mode: forwards; /*開始と終了の状態*/
-	-webkit-animation-duration: 0.5s; /*アニメーションの長さ*/
-	-webkit-animation-delay: 1.0s; /*アニメーションの開始を遅らせる*/
-	-webkit-animation-timing-function: linear; /*アニメーションの進行具合*/
-	-webkit-animation-direction: normal;
-	animation-delay: 1.0s;
-	animation-direction: normal;
-	animation-duration: 0.5s;
-	animation-fill-mode: forwards;
-	animation-name: fadeInUp;
-	animation-timing-function: linear; /*アニメーションの向き*/
-}
-
-.p-message__item:nth-child(3).is-animated {
-	-webkit-animation-name: fadeInUp; /*1で解説*/
-	-webkit-animation-fill-mode: forwards; /*開始と終了の状態*/
-	-webkit-animation-duration: 0.5s; /*アニメーションの長さ*/
-	-webkit-animation-delay: 1.5s; /*アニメーションの開始を遅らせる*/
-	-webkit-animation-timing-function: linear; /*アニメーションの進行具合*/
-	-webkit-animation-direction: normal;
-	animation-delay: 1.5s;
-	animation-direction: normal;
-	animation-duration: 0.5s;
-	animation-fill-mode: forwards;
-	animation-name: fadeInUp;
-	animation-timing-function: linear; /*アニメーションの向き*/
 }
 
 .p-massage__main {
@@ -1486,13 +1441,13 @@ textarea {
 .p-message__main-title.is-animated {
 	-webkit-animation-name: fadeInUp; /*1で解説*/
 	-webkit-animation-fill-mode: forwards; /*開始と終了の状態*/
-	-webkit-animation-duration: 1.0s; /*アニメーションの長さ*/
+	-webkit-animation-duration: 0.5s; /*アニメーションの長さ*/
 	-webkit-animation-timing-function: linear; /*アニメーションの進行具合*/
 	-webkit-animation-direction: normal; /*アニメーションの向き*/
-	-webkit-animation-delay: 2.0s;
-	animation-delay: 2.0s;
+	-webkit-animation-delay: 0.5s;
+	animation-delay: 0.5s;
 	animation-direction: normal;
-	animation-duration: 1.0s;
+	animation-duration: 0.5s;
 	animation-fill-mode: forwards;
 	animation-name: fadeInUp;
 	animation-timing-function: linear; /*アニメーションの開始を遅らせる*/
@@ -2637,13 +2592,11 @@ textarea {
 .p-success__item:nth-child(1).is-animated {
 	-webkit-animation-name: fadeInDown; /*1で解説*/
 	-webkit-animation-fill-mode: forwards; /*開始と終了の状態*/
-	-webkit-animation-duration: .5s; /*アニメーションの長さ*/
+	-webkit-animation-duration: .4s; /*アニメーションの長さ*/
 	-webkit-animation-timing-function: linear; /*アニメーションの進行具合*/
-	-webkit-animation-delay: 0.5s; /*アニメーションの開始を遅らせる*/
 	-webkit-animation-direction: normal;
-	animation-delay: 0.5s;
 	animation-direction: normal;
-	animation-duration: .5s;
+	animation-duration: .4s;
 	animation-fill-mode: forwards;
 	animation-name: fadeInDown;
 	animation-timing-function: linear; /*アニメーションの向き*/
@@ -2652,13 +2605,13 @@ textarea {
 .p-success__item:nth-child(2).is-animated {
 	-webkit-animation-name: fadeInDown; /*1で解説*/
 	-webkit-animation-fill-mode: forwards; /*開始と終了の状態*/
-	-webkit-animation-duration: .5s; /*アニメーションの長さ*/
+	-webkit-animation-duration: .4s; /*アニメーションの長さ*/
 	-webkit-animation-timing-function: linear; /*アニメーションの進行具合*/
-	-webkit-animation-delay: 1.0s; /*アニメーションの開始を遅らせる*/
+	-webkit-animation-delay: 0.4s; /*アニメーションの開始を遅らせる*/
 	-webkit-animation-direction: normal;
-	animation-delay: 1.0s;
+	animation-delay: 0.4s;
 	animation-direction: normal;
-	animation-duration: .5s;
+	animation-duration: .4s;
 	animation-fill-mode: forwards;
 	animation-name: fadeInDown;
 	animation-timing-function: linear; /*アニメーションの向き*/
@@ -2667,13 +2620,13 @@ textarea {
 .p-success__item:nth-child(3).is-animated {
 	-webkit-animation-name: fadeInDown; /*1で解説*/
 	-webkit-animation-fill-mode: forwards; /*開始と終了の状態*/
-	-webkit-animation-duration: .5s; /*アニメーションの長さ*/
-	-webkit-animation-delay: 1.5s; /*アニメーションの開始を遅らせる*/
+	-webkit-animation-duration: .4s; /*アニメーションの長さ*/
+	-webkit-animation-delay: 0.8s; /*アニメーションの開始を遅らせる*/
 	-webkit-animation-timing-function: linear; /*アニメーションの進行具合*/
 	-webkit-animation-direction: normal;
-	animation-delay: 1.5s;
+	animation-delay: 0.8s;
 	animation-direction: normal;
-	animation-duration: .5s;
+	animation-duration: .4s;
 	animation-fill-mode: forwards;
 	animation-name: fadeInDown;
 	animation-timing-function: linear; /*アニメーションの向き*/
@@ -2803,13 +2756,11 @@ textarea {
 .p-toggle__item:nth-child(1).is-animated {
 	-webkit-animation-name: fadeInDown; /*1で解説*/
 	-webkit-animation-fill-mode: forwards; /*開始と終了の状態*/
-	-webkit-animation-duration: .5s; /*アニメーションの長さ*/
+	-webkit-animation-duration: .4s; /*アニメーションの長さ*/
 	-webkit-animation-timing-function: linear; /*アニメーションの進行具合*/
-	-webkit-animation-delay: 0.5s; /*アニメーションの開始を遅らせる*/
 	-webkit-animation-direction: normal;
-	animation-delay: 0.5s;
 	animation-direction: normal;
-	animation-duration: .5s;
+	animation-duration: .4s;
 	animation-fill-mode: forwards;
 	animation-name: fadeInDown;
 	animation-timing-function: linear; /*アニメーションの向き*/
@@ -2818,13 +2769,13 @@ textarea {
 .p-toggle__item:nth-child(2).is-animated {
 	-webkit-animation-name: fadeInDown; /*1で解説*/
 	-webkit-animation-fill-mode: forwards; /*開始と終了の状態*/
-	-webkit-animation-duration: .5s; /*アニメーションの長さ*/
+	-webkit-animation-duration: .4s; /*アニメーションの長さ*/
 	-webkit-animation-timing-function: linear; /*アニメーションの進行具合*/
-	-webkit-animation-delay: 1.0s; /*アニメーションの開始を遅らせる*/
+	-webkit-animation-delay: 0.4s; /*アニメーションの開始を遅らせる*/
 	-webkit-animation-direction: normal;
-	animation-delay: 1.0s;
+	animation-delay: 0.4s;
 	animation-direction: normal;
-	animation-duration: .5s;
+	animation-duration: .4s;
 	animation-fill-mode: forwards;
 	animation-name: fadeInDown;
 	animation-timing-function: linear; /*アニメーションの向き*/
@@ -2833,13 +2784,13 @@ textarea {
 .p-toggle__item:nth-child(3).is-animated {
 	-webkit-animation-name: fadeInDown; /*1で解説*/
 	-webkit-animation-fill-mode: forwards; /*開始と終了の状態*/
-	-webkit-animation-duration: .5s; /*アニメーションの長さ*/
+	-webkit-animation-duration: .4s; /*アニメーションの長さ*/
 	-webkit-animation-timing-function: linear; /*アニメーションの進行具合*/
-	-webkit-animation-delay: 1.5s; /*アニメーションの開始を遅らせる*/
+	-webkit-animation-delay: 0.8s; /*アニメーションの開始を遅らせる*/
 	-webkit-animation-direction: normal;
-	animation-delay: 1.5s;
+	animation-delay: 0.8s;
 	animation-direction: normal;
-	animation-duration: .5s;
+	animation-duration: .4s;
 	animation-fill-mode: forwards;
 	animation-name: fadeInDown;
 	animation-timing-function: linear; /*アニメーションの向き*/
@@ -2848,13 +2799,13 @@ textarea {
 .p-toggle__item:nth-child(4).is-animated {
 	-webkit-animation-name: fadeInDown; /*1で解説*/
 	-webkit-animation-fill-mode: forwards; /*開始と終了の状態*/
-	-webkit-animation-duration: .5s; /*アニメーションの長さ*/
+	-webkit-animation-duration: .4s; /*アニメーションの長さ*/
 	-webkit-animation-timing-function: linear; /*アニメーションの進行具合*/
-	-webkit-animation-delay: 2.0s; /*アニメーションの開始を遅らせる*/
+	-webkit-animation-delay: 1.2s; /*アニメーションの開始を遅らせる*/
 	-webkit-animation-direction: normal;
-	animation-delay: 2.0s;
+	animation-delay: 1.2s;
 	animation-direction: normal;
-	animation-duration: .5s;
+	animation-duration: .4s;
 	animation-fill-mode: forwards;
 	animation-name: fadeInDown;
 	animation-timing-function: linear; /*アニメーションの向き*/
@@ -2946,13 +2897,11 @@ textarea {
 .p-use__item:nth-child(1).is-animated {
 	-webkit-animation-name: fadeInDown;
 	-webkit-animation-fill-mode: forwards; /*開始と終了の状態*/
-	-webkit-animation-duration: .5s; /*アニメーションの長さ*/
+	-webkit-animation-duration: .4s; /*アニメーションの長さ*/
 	-webkit-animation-timing-function: linear; /*アニメーションの進行具合*/
-	-webkit-animation-delay: 0.5s; /*アニメーションの開始を遅らせる*/
 	-webkit-animation-direction: normal;
-	animation-delay: 0.5s;
 	animation-direction: normal;
-	animation-duration: .5s;
+	animation-duration: .4s;
 	animation-fill-mode: forwards;
 	animation-name: fadeInDown;
 	animation-timing-function: linear; /*アニメーションの向き*/
@@ -2961,13 +2910,13 @@ textarea {
 .p-use__item:nth-child(2).is-animated {
 	-webkit-animation-name: fadeInDown;
 	-webkit-animation-fill-mode: forwards; /*開始と終了の状態*/
-	-webkit-animation-duration: .5s; /*アニメーションの長さ*/
+	-webkit-animation-duration: .4s; /*アニメーションの長さ*/
 	-webkit-animation-timing-function: linear; /*アニメーションの進行具合*/
-	-webkit-animation-delay: 1.0s; /*アニメーションの開始を遅らせる*/
+	-webkit-animation-delay: 0.4s; /*アニメーションの開始を遅らせる*/
 	-webkit-animation-direction: normal;
-	animation-delay: 1.0s;
+	animation-delay: 0.4s;
 	animation-direction: normal;
-	animation-duration: .5s;
+	animation-duration: .4s;
 	animation-fill-mode: forwards;
 	animation-name: fadeInDown;
 	animation-timing-function: linear; /*アニメーションの向き*/
@@ -2976,13 +2925,13 @@ textarea {
 .p-use__item:nth-child(3).is-animated {
 	-webkit-animation-name: fadeInDown;
 	-webkit-animation-fill-mode: forwards; /*開始と終了の状態*/
-	-webkit-animation-duration: .5s; /*アニメーションの長さ*/
+	-webkit-animation-duration: .4s; /*アニメーションの長さ*/
 	-webkit-animation-timing-function: linear; /*アニメーションの進行具合*/
-	-webkit-animation-delay: 1.5s; /*アニメーションの開始を遅らせる*/
+	-webkit-animation-delay: 0.8s; /*アニメーションの開始を遅らせる*/
 	-webkit-animation-direction: normal;
-	animation-delay: 1.5s;
+	animation-delay: 0.8s;
 	animation-direction: normal;
-	animation-duration: .5s;
+	animation-duration: .4s;
 	animation-fill-mode: forwards;
 	animation-name: fadeInDown;
 	animation-timing-function: linear; /*アニメーションの向き*/
@@ -2991,13 +2940,13 @@ textarea {
 .p-use__item:nth-child(4).is-animated {
 	-webkit-animation-name: fadeInDown;
 	-webkit-animation-fill-mode: forwards; /*開始と終了の状態*/
-	-webkit-animation-duration: .5s; /*アニメーションの長さ*/
+	-webkit-animation-duration: .4s; /*アニメーションの長さ*/
 	-webkit-animation-timing-function: linear; /*アニメーションの進行具合*/
-	-webkit-animation-delay: 2.0s; /*アニメーションの開始を遅らせる*/
+	-webkit-animation-delay: 1.2s; /*アニメーションの開始を遅らせる*/
 	-webkit-animation-direction: normal;
-	animation-delay: 2.0s;
+	animation-delay: 1.2s;
 	animation-direction: normal;
-	animation-duration: .5s;
+	animation-duration: .4s;
 	animation-fill-mode: forwards;
 	animation-name: fadeInDown;
 	animation-timing-function: linear; /*アニメーションの向き*/
@@ -3139,6 +3088,18 @@ html {
 	margin-top: 3rem;
 }
 
+.c-hamburger__line {
+	width: 2.25rem;
+}
+
+.c-hamburger__line::before {
+	top: -10px;
+}
+
+.c-hamburger__line::after {
+	top: 10px;
+}
+
 .c-section-title {
 	font-size: 2.25rem;
 }
@@ -3267,9 +3228,22 @@ input[type="checkbox"] + span::after {
 	font-size: 0.875rem;
 }
 
+.p-header {
+	height: 5rem;
+}
+
 .p-header__inner {
 	align-items: center;
 	display: flex;
+}
+
+.p-header__logo {
+	width: 8.5rem;
+}
+
+.p-header__drawer {
+	right: 2.1875rem;
+	top: 1.5rem;
 }
 
 .p-message {

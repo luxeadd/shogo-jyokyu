@@ -32,7 +32,7 @@ drawerMenuItem.addEventListener('click', () => {
 
 //スクロールしたらCSSアニメーション発動
 let targets = document.querySelectorAll('.js-scrollAnimation');//アニメーションさせたい要素
-let offset = 100;//アニメーションタイミング
+let offset = -100;//アニメーションタイミング
 
 window.addEventListener('scroll', function() {//スクロールしたとき
 
